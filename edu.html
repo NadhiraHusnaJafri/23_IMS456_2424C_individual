@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <title>My Education</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+            background-color: rgb(255, 222, 241);
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff006a;
+            margin-top: 20px;
+        }
+
+        #project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            justify-items: center;
+            margin-top: 15px;
+        }
+
+        .project img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .project img {
+                max-height: 150px;
+            }
+        }
+
+        /* Styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px; /* Set the font size to 18px */
+        }
+
+        th, td {
+            padding: 2px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Education</h1>
+        
+        <!-- Gallery -->
+        <div id="project-gallery">
+            <div class="project">
+                <img src="Images/SEMESTA.jpg" alt="Project 1">
+            </div>
+            <div class="project">
+                <img src="Images/diploma.jpg" alt="Project 2">
+            </div>
+            <div class="project">
+                <img src="Images/classmates degree.jpg" alt="Project 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Table centered on the webpage -->
+    <div class="container">
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Achievement</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>SK Seri Intan, Teluk Intan</td>
+                <td>2008 - 2013</td>
+                <td>5A (UPSR)</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>SMK Seri Setia, Teluk Intan</td>
+                <td>2014 - 2018</td>
+                <td>6A (SPM)</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>UiTM Merbok, Kedah</td>
+                <td>2019 - 2022</td>
+                <td>Diploma in Banking, 3.54</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>UiTM Kota Bharu, Kelantan</td>
+                <td>2022 - 2024</td>
+                <td>Degree in Finance, 3.78</td>
+            </tr>
+        </table>
+    </div>
+    <div id="project-gallery" class="center">
+        <div>
+            <a href="biodata.html" style="margin: 5px; padding: 10px 20px; text-decoration:dashed; border: purple; border-radius: 3px; font-size: 16px; color: #000000; cursor: pointer; background-color: #fc78af; box-shadow: 0 2px 4px rgb(102, 0, 39);">My Biodata</a>
+            <a href="objectives.html" style="margin: 5px; padding: 10px 20px; text-decoration:dashed; border:purple; border-radius: 3px; font-size: 16px; color: #000000; cursor: pointer; background-color:  #fc78af; box-shadow: 0 2px 4px rgb(102, 0, 39);">Objectives</a>
+            <a href="index.html" style="margin: 5px; padding: 10px 20px; text-decoration:dashed; border:purple; border-radius: 3px; font-size: 16px; color:#000000; cursor: pointer; background-color:   #fc78af; box-shadow: 0 2px 4px rgb(102, 0, 39);">Back to Home</a>
+           
+        </div>
+    
+    </div>
+
+</body>
+</html>
