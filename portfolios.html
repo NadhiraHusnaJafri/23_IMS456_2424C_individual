@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio Gallery</title>
+  <style> 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3d7e5; 
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #611656;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+
+    .click-sound {
+      position: absolute;
+      top: -9999px;
+    }
+
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border: 2px solid purple;
+      border-radius: 3px;
+      font-size: 16px;
+      color: #000000;
+      cursor: pointer;
+      background-color: #fc78af;
+      box-shadow: 0 2px 4px rgb(102, 0, 39);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>My Gallery</h1>
+  <div class="box-container">
+    <div class="gallery">
+      <img src="images/BIAAS DISPLAY.png" alt="Picture 1">
+      <img src="images/BIAAS LOGO.png" alt="Picture 2">
+      <img src="images/building_logo_mockup8.png" alt="Picture 3">
+      <img src="images/CHIKI'S NAILS.png" alt="Picture 4">
+      <img src="images/DAILY DOSE.png" alt="Picture 5">
+      <img src="images/ECO-TECH SOLUTION.png" alt="Picture 6">
+      <img src="images/ECOLUX HOME.png" alt="Picture 7">
+      <img src="images/Gold Modern Business Logo.png" alt="Picture 8">
+      <img src="images/‌INFIINITY GAME MODS.png" alt="Picture 9">
+      <img src="images/JACE BEAUTI'.png" alt="Picture 10">
+      <img src="images/MIKE KNIGHT.png" alt="Picture 11">
+      <img src="images/MAAY LOGO.png" alt="Picture 12">
+      <img src="images/PHONETECH HUB.png" alt="Picture 13">
+      <img src="images/PRIMA PERKS 1.png" alt="Picture 14">
+      <img src="images/VEGA VAPER.png" alt="Picture 15">
+      <img src="images/BACK.png" alt="Picture 16">
+      <img src="images/FRONT.png" alt="Picture 17">
+      <img src="images/MORE BODII.png" alt="Picture 18">
+      <img src="images/OSA IZAKAYA.png" alt="Picture 19">
+      <img src="images/PRIMA PERKS 2.png" alt="Picture 20">
+    </div>
+  </div>
+
+  <audio class="click-sound" src="sound/fantasy.wav"></audio>
+  <script>
+    const images = document.querySelectorAll('.gallery img');
+    const clickSound = document.querySelector('.click-sound');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+     
+        clickSound.currentTime = 0; 
+        clickSound.play();
+      });
+    });
+  </script>
+
+
+  <div class="button-container">
+    <a href="biodata.html" class="button">My Biodata</a>
+    <a href="objectives.html" class="button">Objectives</a>
+    <a href="edu.html" class="button">My Education</a>
+    <a href="index.html" class="button">Back to Home</a>
+  </div>
+
+</body>
+</html>
